@@ -1,0 +1,54 @@
+/ Begin footer
+%footer.text-off-white
+  .footer-top
+    .container
+      .row.wow.bounceInLeft{"data-wow-delay" => "0.4s"}
+        .col-sm-6.col-md-4
+          %h4 Useful Links
+          %ul.imp-links
+            %li
+              %a{:href => ""} About
+            %li
+              %a{:href => ""} Services
+            %li
+              %a{:href => ""} Press
+            %li
+              %a{:href => ""} Copyright
+            %li
+              %a{:href => ""} Advertise
+            %li
+              %a{:href => ""} Legal
+        .col-sm-6.col-md-4
+          %h4 Subscribe
+          #footer_signup
+            #email
+              %form#subscribe{:method => "POST"}
+                %input#address{"data-validate" => "validate(required, email)", :name => "email", :placeholder => "Enter email address", :type => "text"}/
+                %button{:type => "submit"} Submit
+                %span#result.section-description
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .col-sm-12.col-md-4
+          %h4 Recent Tweets
+          .single-tweet
+            .tweet-content
+              %span @Unika
+              Excepteur sint occaecat cupidatat non proident
+            .tweet-date 1 Hour ago
+          .single-tweet
+            .tweet-content
+              %span @Unika
+              Excepteur sint occaecat cupidatat non proident uku shumaru
+            .tweet-date 1 Hour ago
+      / /.row
+    / /.container
+  .footer
+    .container.text-center.wow.fadeIn{"data-wow-delay" => "0.4s"}
+      %p.copyright
+        Copyright © 2015 - Designed By
+        %a.theme-author{:href => "https://www.behance.net/poljakova"} Veronika Poljakova
+        \& Developed by
+        %a.theme-author{:href => "http://www.imransdesign.com/"} Imransdesign
+/ End footer
+%a.scrolltotop{:href => "#"}
+  %i.fa.fa-arrow-up
+/ Scroll to top button

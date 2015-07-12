@@ -1,0 +1,55 @@
+/ Begin contact section
+%section#contact-section.page.text-white.parallax{"data-stellar-background-ratio" => "0.5", :style => "background-image: url(assets/map-bg.jpg);"}
+  .cover
+  / Begin page header
+  .page-header-wrapper
+    .container
+      .page-header.text-center.wow.fadeInDown{"data-wow-delay" => "0.4s"}
+        %h2 Contacts
+        .devider
+        %p.subtitle All to contact us
+  / End page header
+  .contact.wow.bounceInRight{"data-wow-delay" => "0.4s"}
+    .container
+      .row
+        .col-sm-6
+          .contact-info
+            %h4 Our Address
+            %ul.contact-address
+              %li
+                %i.fa.fa-map-marker.fa-lg>
+                \  100 Limpbiscayne Blvd. (North) 17st Floor ,
+                %br/
+                = succeed "\u{a0}\u{a0}\u{a0}\u{a0}\u{a0}\u{a0}\u{a0}" do
+                  %br/
+                %br/
+                = succeed "\u{a0}\u{a0}\u{a0}\u{a0}\u{a0}\u{a0}\u{a0}" do
+                  %br/
+              %li
+                %i.fa.fa-phone>
+                \  1 -234 -456 -7890
+              %li
+                %i.fa.fa-print>
+                \  1 -234 -456 -7890
+              %li
+                %i.fa.fa-envelope
+                info@yourdomain.com
+              %li
+                %i.fa.fa-skype
+                Unika-Design
+        .col-sm-6
+          .contact-form
+            %h4 Write to us
+            %form{:role => "form"}
+              .form-group
+                %input.form-control.input-lg{:placeholder => "Your Name", :required => "", :type => "text"}/
+              .form-group
+                %input.form-control.input-lg{:placeholder => "E-mail", :required => "", :type => "email"}/
+              .form-group
+                %input.form-control.input-lg{:placeholder => "Subject", :required => "", :type => "text"}/
+              .form-group
+                %textarea.form-control.input-lg{:placeholder => "Message", :required => "", :rows => "5"}
+              %button.btn.wow.bounceInRight{"data-wow-delay" => "0.8s", :type => "submit"} Send
+      / /.row
+    / /.container
+/ End contact section

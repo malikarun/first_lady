@@ -1,0 +1,41 @@
+/ Begin counter up
+%section#counter-section
+  #counter-up-trigger.counter-up.text-white.parallax{"data-stellar-background-ratio" => "0.5", :style => "background-image: url(assets/counter-bg.jpg);"}
+    .cover
+    / Begin page header
+    .page-header-wrapper
+      .container
+        .page-header.text-center.wow.fadeInDown{"data-wow-delay" => "0.4s"}
+          %h2 Some Fun Facts
+          .devider
+          %p.subtitle Before anyone is not told
+    / End page header
+    .container
+      .row
+        .fact.text-center.col-md-3.col-sm-6
+          .fact-inner
+            %i.fa.fa-users.fa-3x
+            .extra-space-l
+            %span.counter 6666
+            %p.lead Clients Worked With
+        .fact.text-center.col-md-3.col-sm-6
+          .fact-inner
+            %i.fa.fa-leaf.fa-3x
+            .extra-space-l
+            %span.counter 800
+            %p.lead Completed Projects
+        .fact.text-center.col-md-3.col-sm-6
+          .fact-inner
+            %i.fa.fa-trophy.fa-3x
+            .extra-space-l
+            %span.counter 55
+            %p.lead Winning Awards
+        .fact.last.text-center.col-md-3.col-sm-6
+          .fact-inner
+            %i.fa.fa-coffee.fa-3x
+            .extra-space-l
+            %span.counter 1100
+            %p.lead Cups of coffee drinking
+      / /.row
+    / /.container
+/ End counter up

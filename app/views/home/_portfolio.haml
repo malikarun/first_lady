@@ -1,0 +1,86 @@
+/ Begin Portfolio
+%section#portfolio-section.page.bg-style1
+  .container
+    .row
+      .col-md-12
+        .portfolio
+          / Begin page header
+          .page-header-wrapper
+            .container
+              .page-header.text-center.wow.fadeInDown{"data-wow-delay" => "0.4s"}
+                %h2 Our Works
+                .devider
+                %p.subtitle What we are proud of
+          / End page header
+          .portfoloi_content_area
+            #filters.portfolio_menu
+              %ul
+                %li.active_prot_menu
+                  %a{"data-filter" => "*", href: "#porfolio_menu"} all
+                %li
+                  %a{"data-filter" => ".websites", href: "#porfolio_menu"} websites
+                %li
+                  %a{"data-filter" => ".webDesign", href: "#porfolio_menu"} web design
+                %li
+                  %a{"data-filter" => ".appsDevelopment", href: "#porfolio_menu"} apps development
+                %li
+                  %a{"data-filter" => ".GraphicDesign", href: "#porfolio_menu"} graphic design
+                %li
+                  %a{"data-filter" => ".responsive", href: "#porfolio_menu"} responsive
+            .portfolio_content
+              #portfolio.row
+                .col-xs-12.col-sm-4.appsDevelopment
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p1.jpg"}
+                    %div
+                      %a{href: "#"} Skull Awesome
+                      %span Subtitle
+                .col-xs-12.col-sm-4.GraphicDesign
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p2.jpg"}
+                    %div
+                      %a{href: "#"} Photo Frame
+                      %span Subtitle
+                .col-xs-12.col-sm-4.responsive
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p3.jpg"}
+                    %div
+                      %a{href: "#"} Hand Shots
+                      %span Subtitle
+                .col-xs-12.col-sm-4.webDesign.websites
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p4.jpg"}
+                    %div
+                      %a{href: "#"} Night Abstract
+                      %span Subtitle
+                .col-xs-12.col-sm-4.appsDevelopment.websites
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p5.jpg"}
+                    %div
+                      %a{href: "#"} Joy of Independence
+                      %span Subtitle
+                .col-xs-12.col-sm-4.GraphicDesign
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p6.jpg"}
+                    %div
+                      %a{href: "#"} Night Crawlers
+                      %span Subtitle
+                .col-xs-12.col-sm-4.responsive
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p7.jpg"}
+                    %div
+                      %a{href: "#"} Last Motel
+                      %span Subtitle
+                .col-xs-12.col-sm-4.GraphicDesign
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p8.jpg"}
+                    %div
+                      %a{href: "#"} Dirk Road
+                      %span Subtitle
+                .col-xs-12.col-sm-4.websites
+                  .portfolio_single_content
+                    %img{alt: "title", src: "assets/p9.jpg"}
+                    %div
+                      %a{href: "#"} Old is Gold
+                      %span Subtitle
+/ End portfolio
